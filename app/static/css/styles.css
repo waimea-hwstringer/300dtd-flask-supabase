@@ -39,20 +39,30 @@ main {
     padding-left: 2rem;
 }
 
-#rand-num {
-    font-size: 10rem;
-    width: 20rem;
+#things {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    max-width: max-content;
+    flex-wrap: wrap;
+    padding: 2rem;
 }
 
-#numSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
+#things article {
+    width: 15rem;
+    min-height: max-content;
 }
+
+#things header{
+    font-size: 1.5rem;
+    color: var(--pico-primary);
+}
+
+#things footer {
+    color: var(--pico-secondary)
+}
+
+
 
 footer {
     display: flex;
