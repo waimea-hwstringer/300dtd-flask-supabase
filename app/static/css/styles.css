@@ -51,11 +51,17 @@ main {
 #things article {
     width: 15rem;
     min-height: max-content;
+    display: flex;
+    flex-direction: column;
 }
 
 #things header{
     font-size: 1.5rem;
     color: var(--pico-primary);
+}
+
+#things articleContents {
+    flex: 1;
 }
 
 #things footer {
