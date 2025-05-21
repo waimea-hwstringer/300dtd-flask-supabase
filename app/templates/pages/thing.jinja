@@ -1,0 +1,37 @@
+{%extends 'pages/base.jinja'%}
+
+{%block title%}
+    Supabase - Single Thing
+{%endblock%}
+
+
+{%block content%} 
+    
+    <section id="hero">
+        <h1>Hello!!!</h1> 
+    </section>
+    <section id="things">
+        <article>
+            <header>
+                {{thing["name"]}}
+            </header>
+            <articleContents>
+                ${{thing["cost"]}}
+                <br>
+                {{thing["desc"]}}
+                <br>
+                {{thing["rating"]}}/10
+                <br>
+                goon score = {{thing["goonability"]}}
+            </articleContents>
+            <footer>
+                <a href="/">back</a>
+                <a href="#">delete</a>
+            </footer>
+        </article> 
+    </section>
+    
+
+
+{%endblock%}
+

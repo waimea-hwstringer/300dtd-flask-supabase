@@ -65,7 +65,19 @@ main {
 }
 
 #things footer {
-    color: var(--pico-secondary)
+    color: var(--pico-secondary);
+    display: flex;
+    justify-content: space-around;
+}
+
+#things footer a {
+    color: var(--pico-secondary);
+    text-decoration: none;
+}
+
+#things footer a:hover {
+    color: var(--pico-primary);
+
 }
 
 
